@@ -1,0 +1,23 @@
+package com.exc;
+
+import java.io.FileNotFoundException;
+
+public class ClassB{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ClassA c=new ClassA();
+		try
+		{
+			c.doOpenFile();
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+			
+		}
+	}
+
+	}
+
+
