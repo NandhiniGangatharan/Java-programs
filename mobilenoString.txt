@@ -1,0 +1,28 @@
+public class Mobileno {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        String Phno="982421233";
+		
+		String regEx="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]";
+		if(Phno.matches(regEx))
+			System.out.println("valid");
+		else
+			System.out.println("invalid");
+		
+		
+		
+	String regEx1="^\\d{10}$";
+	System.out.println(Phno.matches(regEx1));
+	
+	
+	String mno="911834567899";
+	String regEx2="(91)?[0-9]{12}";
+	System.out.println(mno.matches(regEx2));
+
+
+
+
+	}
+
+}
