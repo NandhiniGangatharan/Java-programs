@@ -1,0 +1,19 @@
+public class InvalidNameException extends Exception{
+	
+
+	public InvalidNameException(String s) {
+	
+		super(s);
+	}
+
+	@Override
+	public String toString() {
+		return "InvalidNameException []";
+	}
+	@Override
+	public String getMessage() {
+		return"message is get";
+	}
+}
+
+
