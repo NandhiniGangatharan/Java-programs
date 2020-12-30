@@ -1,0 +1,28 @@
+public class Employee {
+	int empid,empsalary;
+	public void calctax()
+	{
+		float tax=(empsalary)-100;
+		System.out.println("tax is:"+tax);
+	}
+	public void printdetails()
+	{
+		System.out.println("emp id is is:"+empid);
+		System.out.println("wages is:"+empsalary);
+		
+	}
+
+
+	public static void main(String[] args) {
+		Employee e =new Employee();
+		Scanner sc= new Scanner(System.in);
+		System.out.println("enter the id");
+		e.empid=sc.nextInt();
+		System.out.println("enter the salary");
+		e.empsalary=sc.nextInt();
+		e.printdetails();
+		e.calctax();
+
+		
+
+
