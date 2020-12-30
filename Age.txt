@@ -1,0 +1,26 @@
+package com.exc;
+import java.util.Scanner;
+
+public class Age {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age;
+		Scanner s =new Scanner(System.in);
+		System.out.println("enter ur age");
+		age =s.nextInt();
+		try
+		{
+			if(age<0)
+				throw new ArithmeticException();
+			else 
+				System.out.println("age is valid");
+						}
+		catch(ArithmeticException e)
+		{
+			System.err.println("age should be positive");
+		}
+
+	}
+
+}
