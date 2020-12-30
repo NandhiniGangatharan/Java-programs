@@ -1,0 +1,38 @@
+import java.util.Collections;
+import java.util.List;
+import java.util.TreeSet;
+import java.util.Iterator;
+import java.io.*; 
+
+public class Treeset {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<String> set =new TreeSet<String>();
+		set.add("chennai");
+		set.add("tuty");
+		set.add("tvl");
+		set.add("green");
+		set.add("blue");
+		System.out.println(set);
+		System.out.println(set.first());
+		System.out.println(set.last());
+		System.out.println(set.descendingSet());
+		System.out.println(set.remove("tuty"));
+		TreeSet<String> color =new TreeSet<String>();
+		color.add("white");     
+	     color.add("black");    
+	     color.add("yellow");    
+	     color.add("blue");
+	     color.add("tuty");
+	     System.out.println( color); 
+	     //comparing two sets
+	     if(color.contains("green"))
+		    	System.out.println("contains color");
+		    else
+		    	System.out.println("doesnot contains color");
+	    
+         
+	                  System.out.println(color.removeAll(color)); 
+	}
+}
