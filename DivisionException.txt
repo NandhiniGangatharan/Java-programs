@@ -1,0 +1,27 @@
+import java.io.IOException;
+
+public class Div {
+			
+			public void doDivision() throws IOException
+			{
+				System.out.println("all is good");
+				
+				throw new IOException();
+			}
+		}
+public static void main(String[] args) {
+	
+	Employee e=new Employee();
+	try
+	{
+		e.doDivision();
+	}
+	catch(IOException e1)
+	{
+		e1.printStackTrace();
+		
+	}
+}
+
+}
+	
