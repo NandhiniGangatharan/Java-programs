@@ -1,0 +1,31 @@
+import java.util.HashSet;
+import java.util.Iterator;
+public class Testemp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employeehash e1 =new Employeehash(1,1000,"aa");
+		Employeehash e2=new Employeehash(2,1000,"bb");
+		Employeehash e3 =new Employeehash(3,1000,"cc");
+		Employeehash e4 =new Employeehash(4,1000,"dd");
+		Employeehash e5 =new Employeehash(5,1000,"ee");
+		HashSet<Employeehash> set =new HashSet<Employeehash>();
+		set.add(e1);
+		set.add(e2);
+		set.add(e3);
+		set.add(e4);
+		set.add(e5);
+		for(Employeehash e:set)
+			System.out.println(e);
+		Iterator i=set.iterator();
+		while(i.hasNext())
+		{
+		Employeehash e= (Employeehash)i.next();
+		System.out.println(e.empid +" "+ e.salary + " "+ e.empname);
+		System.out.println(e);
+		}
+		
+		
+			}
+
+}
