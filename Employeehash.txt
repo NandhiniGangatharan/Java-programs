@@ -1,0 +1,17 @@
+public class Employeehash {
+	int empid,salary;
+	String empname;
+	Employeehash(int empid, int salary, String empname) {
+		super();
+		this.empid = empid;
+		this.salary = salary;
+		this.empname = empname;
+	}
+	
+	@Override
+	public String toString() {
+		return "Employeehash [empid=" + empid + ", salary=" + salary + ", empname=" + empname + "]";
+	}
+	
+
+}
