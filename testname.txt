@@ -1,0 +1,37 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+	public class TestName {
+		public boolean isValid(String name)throws InvalidNameException
+		{
+			for(int i=0;i<name.length();i++)
+			{
+				char ch =name.charAt(i);
+				System.out.println(ch);
+			if(( !(ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))) {
+				throw new InvalidNameException("name can't have no nd special char");
+			}
+			
+			}
+				return true;
+			}
+		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TestName t1=new TestName();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter name");
+		String name =sc.next();
+			try {
+			if(t1.isValid(name));
+			System.out.println("correct name");
+		} 
+			catch (InvalidNameException e) {
+		
+			e.printStackTrace();
+		}
+
+	}
+
+}
