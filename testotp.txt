@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class TestOtp {
+	public boolean isValid(String no)throws InvalidOtpException
+	{
+		if(!(no.equals("7896") && no.length()==4))
+			throw new InvalidOtpException("Invalid otp");
+		else
+			return true;
+	
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+					TestOtp o=new TestOtp();
+			Scanner s=new Scanner(System.in);
+			int i=1;
+	        while(i<=3)
+	        {
+	        	System.out.println("Enter OTP");
+	    		String otp=s.next();
+	    		
+	        	try {
+					if(o.isValid(otp))
+					{
+						System.out.println("correct otp");
+						break;
+					}
+					else 
+						continue;
+					
+				} catch (InvalidOtpException e) {
+					
+					e.printStackTrace();
+				}
+	        	i++;
+	        }
+	        s.close();
+		}
+
+
+	}
+
+
