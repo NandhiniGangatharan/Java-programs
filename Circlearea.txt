@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Circle {
+	private double r;
+	double area;
+	double perimeter;
+	public double calc_area(){
+		area=((3.14*(r*r)));
+		return area;
+		
+	}
+	public double calc_perimeter() {
+		perimeter=((2*3.14)*(r));
+		return perimeter;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Circle c1=new Circle();
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the radius");
+		c1.r=s.nextDouble();
+		System.out.println("the radius is " +c1.r); 
+		c1.calc_area();
+		c1.calc_perimeter();
+		System.out.println("the area of circle is " +c1.area);
+		System.out.println("the perimeter of circle is " +c1.perimeter);
+
+
+	}
+
+}
+
