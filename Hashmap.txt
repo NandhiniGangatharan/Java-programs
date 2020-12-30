@@ -1,0 +1,22 @@
+import java.util.HashSet;
+import java.util.Scanner;
+
+
+public class Demohash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<String> set=new HashSet<String>();
+		set.add("aa");
+		set.add("bb");
+		set.add("cc");
+		set.add("dd");
+		System.out.println(set);
+		for(String name:set) {
+			System.out.println(name);
+		if(name.equals("aa"))
+			System.out.println("name is found");
+		}
+	}
+
+}
