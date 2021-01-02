@@ -1,0 +1,16 @@
+package com.modifiers;
+
+public class Acccesmodifiers {
+	public int a;
+	private int b;
+	protected int c;
+	int d;
+
+	public static void main(String[] args) {
+		Acccesmodifiers A1 = new Acccesmodifiers();
+		System.out.println(A1.a);
+		System.out.println(A1.b);
+		System.out.println(A1.c);
+	}
+
+}
