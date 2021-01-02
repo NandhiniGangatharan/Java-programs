@@ -1,0 +1,26 @@
+package com.basics;
+
+public class Integersum {
+	public static int cal_sum(int a) {
+		int n,sum=0;
+		while(a>0)
+		{
+			n=a%10;
+			sum=sum+n;
+			a=a/10;
+		}
+		
+		return sum;
+	}
+
+	public static void main(String[] args) {
+		
+	
+		// TODO Auto-generated method stub
+		int sum=cal_sum(12345);
+		
+		System.out.println("the sum is:"+sum);
+
+	}
+
+}
