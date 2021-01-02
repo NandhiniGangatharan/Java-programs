@@ -1,0 +1,32 @@
+package com.oops;
+
+
+	public class Temporary extends Employee{
+		int insec;
+		int contractperiod;
+		public Temporary(String empname, int empno, int salary, int insec, int contactperiod) {
+			super(empname, empno, salary);
+			this.insec = insec;
+			this.contractperiod = contractperiod;
+		}
+		public int totalsal() {
+			return salary+insec;
+		}
+		@Override
+		public String toString() {
+			return "Temporary [insec=" + insec + ", contractperiod=" + contractperiod + ", empname=" + empname + ", empno="
+					+ empno + ", salary=" + salary + "]";
+		}
+		
+		@Override
+		public float calctax() {
+			float x=totalsal();
+			return (float) (x*0.10);
+		}
+
+	}
+
+
+
+
+
