@@ -1,0 +1,19 @@
+package com.basics;
+import java.lang.Math;
+
+public class Roundup {
+	 
+		    public static void main(String args[]) 
+	    { 
+	        
+	      float x = 45.67f; 
+	      System.out.println(Math.round(x)); 
+	      float y = 32.2f; 
+	      System.out.println(Math.round(y));   
+	      double positiveInfinity = Double.POSITIVE_INFINITY; 
+	       
+	      System.out.println(Math.round(positiveInfinity));   
+	        
+	    } 
+	} 
+	
