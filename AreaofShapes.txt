@@ -1,0 +1,32 @@
+package com.basics;
+
+public class Shape {
+	public float calc_area(int r)
+	{
+	return ((3.14f)*r*r);
+	
+	}
+	public int calc_area(int b,int l)
+	{
+		return (l*b);
+	}
+	public double calc_area(float b,float h)
+	{
+		return((0.5f)*b*h);
+	}
+	public double perimeter(float l,float b)
+	{
+		return (2*l*b);
+	}
+
+	public static void main(String[] args) {
+		Shape s=new Shape ();
+		System.out.println("area of circle is:"+s.calc_area(5));
+		System.out.println("area of rectangle is:"+s.calc_area(5,6));
+		System.out.println("area of triangle is:"+s.calc_area(2,4));
+		System.out.println("perimeter of rectangle is:"+s.perimeter(2,4));
+
+
+	}
+
+}
