@@ -1,0 +1,42 @@
+package com.inter;
+
+public class Minivan implements Vehicles{
+	String mfgrname;
+	int price;
+	int year;
+	
+	
+	public Minivan(String mfgrname, int price, int year) {
+		super();
+		this.mfgrname = mfgrname;
+		this.price = price;
+		this.year = year;
+	}
+	@Override
+	public void printData() {
+		System.out.println(toString());
+		
+		
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Car [mfgrname=" + mfgrname + ", price=" + price + ", year=" + year + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
+}
+
+
+
+
+
+	
+
+
+
+
+
+
