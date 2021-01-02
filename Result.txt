@@ -1,0 +1,28 @@
+package com.basics;
+
+public class Result {
+	public static char give_result(int perc) {
+	     char result;
+		if( perc>75) 
+			result='d';
+			else if ((perc>=60)&&(perc<75))
+				result='1';
+			
+			else if((perc>45)&&(perc>35))
+				result='s';
+			else
+				
+		      result='f';
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        char gra=give_result(78);
+		System.out.println("Grade is:"+gra);
+		
+		
+
+	}
+
+}
