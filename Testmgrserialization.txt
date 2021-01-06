@@ -1,0 +1,34 @@
+package com.file;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+
+public class Countdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			File f=new File("E:\\Test.txt");
+			FileReader fr=new FileReader(f);
+			BufferedReader br=new BufferedReader(fr);
+			String s;
+			while((s=br.readLine())!=null)
+			{
+				System.out.println(s);
+			}
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		catch(IOException e) 
+		{
+			e.printStackTrace();
+			
+		}
+	}
+
+}
