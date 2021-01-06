@@ -1,0 +1,43 @@
+package com.file;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+
+
+public class Countwords {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+		File f =new File("E:\\Test.txt");
+		FileReader fr=new FileReader(f);
+		BufferedReader br=new BufferedReader(fr);
+		int i=0,noofword=0,nooflines=0;
+		String s;
+		while((s=br.readLine())!=null) {
+			String words[] = s.split(" ");   
+            noofword = noofword + words.length;  
+            String lines[] = s.split("\n");   
+            nooflines = nooflines + lines.length;   	
+		}
+		System.out.println("no of words " +noofword);
+		System.out.println("no of lines " +nooflines);
+}
+	catch (FileNotFoundException e) {
+		System.out.println("File doesn't exist");
+		e.printStackTrace();
+	}
+	catch(IOException e1)
+	{
+		System.out.println("File can't be read");
+		e1.printStackTrace();
+	}
+
+}
+		
+	}
+
+
