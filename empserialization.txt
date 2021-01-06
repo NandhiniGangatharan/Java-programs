@@ -1,0 +1,16 @@
+package com.demoserialization;
+
+public class Manager extends Employee{
+	int empsalary;
+	String jobdescription;
+	Manager(int empid, String name, int pswd, int empsalary, String jobdescription) {
+		super(empid, name, pswd);
+		this.empsalary = empsalary;
+		this.jobdescription = jobdescription;
+	}
+	@Override
+	public String toString() {
+		return "Manager [empsalary=" + empsalary + ", jobdescription=" + jobdescription + "]";
+	}
+	
+}
