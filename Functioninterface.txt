@@ -1,0 +1,9 @@
+package com.inter;
+
+public interface FuncInterface {
+	void myMethod(int a ,int b);
+	default void myfunc() {
+		System.out.println("hello");
+	}
+
+}
