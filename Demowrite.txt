@@ -1,0 +1,40 @@
+package com.file;
+import java.io.FileOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+
+public class Demowrite {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			FileOutputStream out =new FileOutputStream("E:\\Test.txt");
+			out.write(65);
+			out.write(72);
+			out.write(76);
+			System.out.println("done");
+			String str="hi roja \n hi vanthana sis";
+			byte[] arr =str.getBytes();
+			out.write(arr);
+			out.flush();
+			out.close();
+		}
+
+				catch(FileNotFoundException e)
+		{
+			
+			
+			e.printStackTrace();
+		}
+	catch(IOException e1)
+	{
+				e1.printStackTrace();
+	}
+				
+	
+
+	}
+
+}
