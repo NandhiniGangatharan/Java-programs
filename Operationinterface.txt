@@ -1,0 +1,8 @@
+package com.inter;
+
+public interface Operation {
+	void myMethod(char opr,int a,int b);
+}
+
+
+
