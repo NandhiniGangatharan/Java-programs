@@ -1,0 +1,24 @@
+package com.file;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class WriteToFile {  
+  public static void main(String[] args) {  
+    try {  
+      FileWriter myWriter = new FileWriter("E://filename.txt",true) {
+	};
+      myWriter.write("Welcome to chennai");
+      myWriter.close();
+      System.out.println("Successfully written.");
+    } 
+    catch (IOException e) 
+    {
+      System.out.println("try again");
+      e.printStackTrace();
+    } 
+  }  
+} 
+
+
+
+
