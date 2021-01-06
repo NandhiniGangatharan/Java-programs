@@ -1,0 +1,18 @@
+package com.inter;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FuncInterface obj=(int a,int b)->
+		{
+			System.out.println("in lamda");
+			System.out.println(a*b);
+			};
+		obj.myMethod(5, 4);
+		obj.myfunc();
+		}
+
+	}
+
+
