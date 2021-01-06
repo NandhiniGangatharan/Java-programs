@@ -1,0 +1,55 @@
+package com.ser; 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+import java.io.ObjectInputStream;
+public class Testserialization {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Demoserialization d = new Demoserialization(101,8900,"ccc");
+		try
+		{
+			//serialization
+			FileOutputStream out = new FileOutputStream("e:\\emp.txt");
+			ObjectOutputStream o =new ObjectOutputStream(out);
+			o.writeObject(d);
+			o.flush();
+			o.close();
+			out.close();
+			System.out.println("done ....");
+	
+	
+		//read from object from file
+		FileInputStream in=new FileInputStream("e:\\emp.txt");
+		ObjectInputStream oi=new ObjectInputStream(in);
+		Demoserialization e=(Demoserialization)oi.readObject();
+		
+		System.out.print(e);
+		System.out.print("done deserialization");
+
+	}
+catch(FileNotFoundException e1)
+{
+	System.out.print("file not found");
+	e1.printStackTrace();
+}
+	catch(IOException e1)
+	{
+		System.out.print("file cannot be read");
+		e1.printStackTrace();
+		
+	}
+catch(ClassNotFoundException e1) {
+	e1.printStackTrace();
+}
+}
+}
+
+
+
+
+	
