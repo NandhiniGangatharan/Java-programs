@@ -1,0 +1,21 @@
+package com.file;
+import java.io.File; 
+
+public class Renamefile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File oldName = 
+		         new File("E:\\Test1.txt"); 
+		        File newName =  
+		         new File("E:\\Test2.txt"); 
+		  
+		        if (oldName.renameTo(newName))  
+		            System.out.println("Renamed successfully");         
+		        else 
+		            System.out.println("Error");         
+		    } 
+
+	}
+
+
